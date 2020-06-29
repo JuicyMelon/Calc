@@ -1,0 +1,161 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    font-family: 'Quicksand', sans-serif !important;
+}
+[id="+"], [id="-"], [id='/'], [id="*"] {
+    background-color: #03256c !important;
+    color: #06bee1;
+    font-weight: bold;
+}
+
+[id="+"]:hover, [id="-"]:hover, [id='/']:hover, [id="*"]:hover {
+    background-color: #06bee1 !important;
+    color: #03256c !important;
+}
+
+h1 {
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+
+#container {
+    display: flex;
+    position: relative;
+    top: 50px;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 320px;
+    margin: auto;
+    height: 411px;
+}
+
+#background {
+    position: fixed;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 7px 0.6px rgba(0, 0, 0, 0.5);
+    left: 0;
+    right: 0;
+    top: 5vh;
+    
+    margin: auto;
+    margin-top: 40px;
+    width: 400px;
+    height: 480px;
+    z-index: 0;
+    
+
+}
+
+#display {
+    width: 320px;
+    height: 90px;
+    background-color: #00171f;
+    position: absolute;
+    bottom: 330px;
+    color: white;
+    font-size: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    position: absolute;
+    
+}
+
+
+
+#calculator {
+    display: grid;
+    grid-template-columns: repeat(3, 60px);
+    grid-template-rows: repeat(4, 60px);
+    grid-gap: 4px;
+    z-index: 1;
+    margin-top: 95px;
+}
+
+#operators {
+    display: grid;
+    grid-template-columns: 60px 60px;
+    grid-template-rows: repeat(5, 60px);
+    grid-gap: 4px;
+    padding-left: 8px;
+    z-index: 1;
+    margin-top: 95px;
+}
+
+
+
+.digit {
+    -webkit-appearance: none;
+    border: none;
+    border-radius: 4px;
+    font-size: 20px;
+    background-color: #06bee1;
+    
+}
+
+.digit:hover {
+    background-color: black;
+    color: #06bee1;
+}
+
+.digit:focus {
+    outline: none !important;
+}
+
+.digit:active {
+    font-weight: bold;
+    opacity: 0.2;
+}
+
+
+
+
+[id='0'] {
+    grid-column: 2 / 3;
+}
+
+[id="="] {
+    grid-column: 1 / 3;
+    background-color: #f28f3b !important;
+}
+
+[id="="]:hover {
+    background-color: black !important;
+    color: #f28f3b !important;
+}
+
+p {
+    margin: 0;
+    padding: 4px;
+}
+
+footer {
+    position: fixed;
+    bottom: 5vh;
+    text-align: center;
+    width: 100%;
+}
+
+h3 {
+    text-align: center;
+}
+
+img {
+    display: block;
+    margin: auto;
+    margin-top: 600px;
+}
+
+img:hover {
+    opacity: 0.5;
+}
